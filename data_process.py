@@ -4,8 +4,8 @@ __author__ = 'Xiang'
 import pandas as pd
 import numpy as np
 
-df_train = pd.read_csv('train.csv')
-df_test = pd.read_csv('test.csv')
+df_train = pd.read_csv('./data/train.csv')
+df_test = pd.read_csv('./data/test.csv')
 
 null_cols = df_train.columns[df_train[df_train == -1].any()]
 to_drop = null_cols[[0, 1, 2, 3, 4, 6, 7, 8, 9, 11]]
